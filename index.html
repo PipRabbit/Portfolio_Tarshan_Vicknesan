@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | Tarshan Vicknesan</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <h1 class="logo">Tarshan Vicknesan</h1>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <div class="nav-links" id="navLinks">
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#projects" onclick="toggleMenu()">Projects</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="reveal">
+    <h2>Hi, I'm <span>Tarshan Vicknesan</span></h2>
+
+    <p>
+      I am a motivated individual with a passion for both creativity and technology,
+    </p>
+
+    <p>
+      and I enjoy problem solving with experimenting new tools, to create interactive experiences
+      that are both functional and visually engaging.
+    </p>
+
+    <p>
+      I aim to keep expanding my skills through practical projects and collaboration in the digital industry.
+    </p>
+
+    <a class="btn" href="#projects">View My Work</a>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="section-title reveal">About Me</h2>
+
+  <div class="about">
+    <div class="card reveal">
+      <p>
+        My interests lie in finding solutions to both general and niche problems using technology.
+        I enjoy expanding my creativity by working on hands-on projects that strengthen my abilities
+        across different areas, particularly in software development and digital design. These experiences
+        allow me to create engaging and innovative digital works while continuing to develop my skills
+        in problem-solving, creativity, and technical innovation.
+      </p>
+    </div>
+
+    <div class="card reveal">
+      <p>
+        <strong>Skills:</strong> HTML, CSS, JavaScript, UI/UX Design, C#<br><br>
+        <strong>Tools:</strong> Figma, VS Code, GitHub, Unity, Blender, Aseprite
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2 class="section-title reveal">Projects</h2>
+
+  <div class="projects">
+    <div class="project reveal">
+      <h3>Project One</h3>
+      <p>Landing page design with smooth layout.</p>
+    </div>
+
+    <div class="project reveal">
+      <h3>Project Two</h3>
+      <p>Dashboard UI with modern analytics layout.</p>
+    </div>
+
+    <div class="project reveal">
+      <h3>Project Three</h3>
+      <p>E-commerce UI concept with clean design.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2 class="section-title reveal">Contact</h2>
+
+  <div class="card reveal">
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea rows="5" placeholder="Your Message"></textarea>
+    <button onclick="sendMessage()">Send Message</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Tarshan Vicknesan. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
