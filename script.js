@@ -1,9 +1,7 @@
-// mobile menu
 function toggleMenu() {
   document.getElementById("navLinks").classList.toggle("show");
 }
 
-// contact form
 function sendMessage() {
   const inputs = document.querySelectorAll("input, textarea");
 
@@ -13,20 +11,23 @@ function sendMessage() {
   }
 
   alert("Message sent successfully!");
-
   inputs.forEach(i => i.value = "");
 }
 
-// scroll animation
 const reveals = document.querySelectorAll(".reveal");
 
-window.addEventListener("scroll", () => {
-  for (let el of reveals) {
-    const top = el.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
+function revealElements() {
+  const windowHeight = window.innerHeight;
 
-    if (top < windowHeight - 100) {
+  reveals.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+
+    if (top < windowHeight - 50) {
       el.classList.add("active");
     }
-  }
-});
+  });
+}
+
+window.addEventListener("load", revealElements);
+
+window.addEventListener("scroll", revealElements);
