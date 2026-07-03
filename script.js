@@ -14,20 +14,21 @@ function sendMessage() {
   inputs.forEach(i => i.value = "");
 }
 
-const reveals = document.querySelectorAll(".reveal");
-
 function revealElements() {
+  const reveals = document.querySelectorAll(".reveal");
   const windowHeight = window.innerHeight;
 
   reveals.forEach(el => {
     const top = el.getBoundingClientRect().top;
 
-    if (top < windowHeight - 50) {
+    if (top < windowHeight - 80) {
       el.classList.add("active");
     }
   });
 }
 
-window.addEventListener("load", revealElements);
+window.addEventListener("load", () => {
+  revealElements();
+});
 
 window.addEventListener("scroll", revealElements);
