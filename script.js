@@ -1,3 +1,4 @@
+
 function toggleMenu() {
   document.getElementById("navLinks").classList.toggle("show");
 }
@@ -27,8 +28,5 @@ function revealElements() {
   });
 }
 
-window.addEventListener("load", () => {
-  revealElements();
-});
-
+window.addEventListener("load", revealElements);
 window.addEventListener("scroll", revealElements);
