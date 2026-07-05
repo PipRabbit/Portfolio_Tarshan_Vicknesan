@@ -12,76 +12,63 @@
 
 <body>
 
-  <!-- NAV -->
-  <nav>
-    <h1 class="logo">Tarshan Vicknesan</h1>
+<nav>
+  <h1 class="logo">Tarshan Vicknesan</h1>
 
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
-    <div class="nav-links" id="navLinks">
-      <a href="#about" onclick="toggleMenu()">About</a>
-      <a href="#projects" onclick="toggleMenu()">Projects</a>
-      <a href="#contact" onclick="toggleMenu()">Contact</a>
-    </div>
-  </nav>
+  <div class="nav-links" id="navLinks">
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#projects" onclick="toggleMenu()">Projects</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+  </div>
+</nav>
 
-  <!-- HERO -->
-  <header class="hero">
-    <div class="reveal">
-      <h2>Hi, I'm <span>Tarshan Vicknesan</span></h2>
+<header class="hero">
+  <div class="reveal">
+    <h2>Hi, I'm <span>Tarshan Vicknesan</span></h2>
 
+    <p> I am a motivated individual with a passion for both creativity and technology,</p> 
+      <p> I enjoy problem solving with experimenting new tools, to create interactive experiences that are both functional and visually engaging.</p>
+      <p> aim to keep expanding my skills through practical projects and collaboration in the digital industry. </p>
+
+    <a class="btn" href="#projects">View My Work</a>
+  </div>
+</header>
+
+<section id="about">
+  <h2 class="section-title reveal">About Me</h2>
+
+  <div class="about">
+    <div class="card reveal">
       <p>
-        I am a motivated individual with a passion for both creativity and technology,
+        My interests lie in finding solutions to both general and niche problems using technology. I enjoy expanding my creativity by working on hands-on projects that strengthen my abilities across different areas, particularly in software development and digital design. These experiences allow me to create engaging and innovative digital works while continuing to develop my skills in problem-solving, creativity, and technical innovation. 
       </p>
-
-      <p>
-        and I enjoy problem solving with experimenting new tools, to create interactive experiences
-        that are both functional and visually engaging.
-      </p>
-
-      <p>
-        I aim to keep expanding my skills through practical projects and collaboration in the digital industry.
-      </p>
-
-      <a class="btn" href="#projects">View My Work</a>
     </div>
-  </header>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h2 class="section-title reveal">About Me</h2>
-
-    <div class="about">
-      <div class="card reveal">
-        <p>
-          My interests lie in finding solutions to both general and niche problems using technology.
-          I enjoy expanding my creativity by working on hands-on projects that strengthen my abilities
-          across different areas, particularly in software development and digital design. These experiences
-          allow me to create engaging and innovative digital works while continuing to develop my skills
-          in problem-solving, creativity, and technical innovation.
-        </p>
-      </div>
-
-      <div class="card reveal">
-        <p>
-          <strong>Skills:</strong> HTML, CSS, JavaScript, UI/UX Design, C#<br><br>
-          <strong>Tools:</strong> Figma, VS Code, GitHub, Unity, Blender, Aseprite
-        </p>
-      </div>
+    <div class="card reveal">
+      <p>
+        <strong>Skills:</strong> HTML, CSS, JavaScript, C#, UI/UX<br><br>
+        <strong>Tools:</strong> Figma, VS Code, GitHub, Unity, Blender, Aseprite
+      </p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2 class="section-title reveal">Projects</h2>
+<section id="projects">
+  <h2 class="section-title reveal">Projects</h2>
 
+  <div class="projects">
+
+    <!-- PROJECT 1 -->
     <div class="project reveal">
+      <img src="images/portfolio_preview.png" class="project-img"
+        onclick="openGallery('portfolio', 0)" />
+
       <h3>Portfolio Website</h3>
 
       <p>
-        A fully responsive personal portfolio website designed and developed using HTML, CSS, and JavaScript.
-        It features a modern blue and white premium UI, smooth animations, a mobile-friendly hamburger menu,
-        and a clean layout showcasing my skills, background, and contact information.
+        A fully responsive portfolio built using HTML, CSS, and JavaScript with animations and mobile-first design.
       </p>
 
       <a class="repo-link" href="https://github.com/PipRabbit/Portfolio_Tarshan_Vicknesan.git" target="_blank">
@@ -89,43 +76,69 @@
       </a>
     </div>
 
+    <!-- PROJECT 2 -->
     <div class="project reveal">
-      <h3>Project Two</h3>
-      <p>A modern dashboard UI with analytics visualization.</p>
+      <img src="images/game_preview.png" class="project-img"
+        onclick="openGallery('game', 0)" />
 
-      <a class="repo-link" href="#" target="_blank">
+      <h3>Game Project</h3>
+
+      <p>
+        A 2D/3D game built with Unity featuring gameplay mechanics, animations, and custom assets.
+      </p>
+
+      <a class="repo-link" href="https://github.com/PipRabbit/VividV2.git" target="_blank">
         View Repository →
       </a>
     </div>
 
+    <!-- PROJECT 3 -->
     <div class="project reveal">
-      <h3>Project Three</h3>
-      <p>A clean and intuitive e-commerce UI concept.</p>
+      <img src="images/pathflow_preview.png" class="project-img"
+        onclick="openGallery('trello', 0)" />
 
-      <a class="repo-link" href="#" target="_blank">
+      <h3>Project Management App</h3>
+
+      <p>
+        A Trello-inspired task management system with drag-and-drop functionality and local storage.
+      </p>
+
+      <a class="repo-link" href="https://github.com/PipRabbit/project_manager_pathflow.git" target="_blank">
         View Repository →
       </a>
     </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <h2 class="section-title reveal">Contact</h2>
+  </div>
+</section>
 
-    <div class="card reveal">
-      <input type="text" placeholder="Your Name">
-      <input type="email" placeholder="Your Email">
-      <textarea rows="5" placeholder="Your Message"></textarea>
-      <button onclick="sendMessage()">Send Message</button>
-    </div>
-  </section>
+<section id="contact">
+  <h2 class="section-title reveal">Contact</h2>
 
-  <!-- FOOTER -->
-  <footer>
-    © 2026 Tarshan Vicknesan. All rights reserved.
-  </footer>
+  <div class="card reveal">
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea rows="5" placeholder="Your Message"></textarea>
+    <button onclick="sendMessage()">Send Message</button>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<footer>
+  © 2026 Tarshan Vicknesan
+</footer>
+
+<!--GALLERY -->
+<div class="lightbox" id="lightbox">
+  <span class="close" onclick="closeGallery()">×</span>
+
+  <button class="nav prev" onclick="changeImage(-1)">‹</button>
+
+  <img id="lightbox-img" src="" />
+
+  <button class="nav next" onclick="changeImage(1)">›</button>
+
+  <div class="counter" id="counter"></div>
+</div>
+
+<script src="script.js"></script>
 </body>
-
 </html>
